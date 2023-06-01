@@ -127,8 +127,12 @@ int main() {
         int working_hour{0};
         ofstream file;
         //char fw;
-        int b1 {3000};
-        int b2 {4000};
+        int b1 ;
+        int b2 ;
+		cout << "Type number of the first buffer: ";
+		cin >> b1;
+		cout << "Type number for the second buffer: ";
+		cin >> b2;
         string txt_name = "ClanekBufferOT_"+to_string(b1)+"_"+to_string(b2)+".txt";
         file.open(txt_name);
         file << "Buffer za D = " << b1 << " in buffer za G = "<< b2 <<" .\n\n";
